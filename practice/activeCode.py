@@ -7,7 +7,7 @@
 
 # def newCode:
 
-import string
+import string, random
 initspecial = string.punctuation
 special = []
 
@@ -20,7 +20,13 @@ str = [chr(i) for i in range(97, 123)] #a-z
 
 number = [chr(i) for i in range(48, 58)] #0-9
 
+total = STR + str + number + special
 
+# print len(total)
 
+strCode = ''
 
+for i in range(16):
+    strCode = strCode + total[random.randint(0, len(total)-1)]
 
+print 'strCode is %s and length is %d' %(strCode, len(strCode))
