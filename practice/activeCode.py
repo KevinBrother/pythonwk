@@ -24,11 +24,3 @@ number = [chr(i) for i in range(48, 58)] #0-9
 
 
 
-
-
-
-
-
-
-
-
