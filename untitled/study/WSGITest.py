@@ -6,6 +6,6 @@ from hellow import application
 
 httpd = make_server('', 8000, application)
 
-print '"Serving HTTP on port 8000'
+print 'Serving HTTP on port 8000'
 
 httpd.serve_forever()

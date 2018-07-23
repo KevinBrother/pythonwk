@@ -26,7 +26,14 @@ total = STR + str + number + special
 
 strCode = ''
 
-for i in range(16):
-    strCode = strCode + total[random.randint(0, len(total)-1)]
+for i in range(1, 21):
+    if(i % 4 == 0):
+        strCode = strCode + "-"
+    else:
+        strCode = strCode + total[random.randint(0, len(total)-1)]
 
 print 'strCode is %s and length is %d' %(strCode, len(strCode))
+
+
+# 保存到 MySQL 关系型数据库中
+
